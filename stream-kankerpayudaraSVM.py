@@ -1,29 +1,6 @@
 import pickle
 import numpy as np
 import streamlit as st
-import numpy as np
-import seaborn as sns
-import matplotlib.pyplot as plt
-from collections import Counter
-from imblearn.datasets import fetch_datasets
-from sklearn.model_selection import train_test_split
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn import svm
-from sklearn.svm import SVC
-from sklearn.svm import LinearSVC
-from sklearn import tree
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.naive_bayes import GaussianNB
-from sklearn.naive_bayes import MultinomialNB
-from sklearn.naive_bayes import CategoricalNB
-from sklearn.naive_bayes import BernoulliNB
-from sklearn.pipeline import make_pipeline
-from sklearn.preprocessing import StandardScaler
-from sklearn.metrics import mean_squared_error, r2_score, accuracy_score
-from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
-from imblearn.metrics import classification_report_imbalanced
-from sklearn.linear_model import LogisticRegression
 
 # load save model
 model = pickle.load(open('penyakit_kankerpayudaraSVM.sav','rb'))
